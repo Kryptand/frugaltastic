@@ -29,9 +29,9 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\CrossCutting.Exceptions\CrossCutting.Exceptions.csproj" />
-    <ProjectReference Include="..\CrossCutting\CrossCutting.Authentication\CrossCutting.Authentication.csproj" />
-    <ProjectReference Include="..\CrossCutting\CrossCutting.Data\CrossCutting.Data.csproj" />
+    <ProjectReference Include="..\..\..\CrossCutting.Exceptions\CrossCutting.Exceptions.csproj" />
+    <ProjectReference Include="..\..\CrossCutting\CrossCutting.Authentication\CrossCutting.Authentication.csproj" />
+    <ProjectReference Include="..\..\CrossCutting\CrossCutting.Data\CrossCutting.Data.csproj" />
   </ItemGroup>
 
 </Project>

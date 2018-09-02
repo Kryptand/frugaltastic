@@ -17,8 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CrossCutting.Balance\CrossCutting.Balance.csproj" />
-    <ProjectReference Include="..\CrossCutting\CrossCutting.Data\CrossCutting.Data.csproj" />
+    <ProjectReference Include="..\..\CrossCutting\CrossCutting.Balance\CrossCutting.Balance.csproj" />
+    <ProjectReference Include="..\..\CrossCutting\CrossCutting.Data\CrossCutting.Data.csproj" />
   </ItemGroup>
 
 </Project>
