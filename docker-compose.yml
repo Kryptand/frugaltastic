@@ -1,0 +1,36 @@
+---
+version: '3.4'
+services:
+  balanceservice:
+    image: balanceservice
+    build:
+      context: "."
+      dockerfile: BalanceService\Dockerfile
+    depends_on:
+       - balancedb
+  authenticationservice:
+    image: authenticationservice
+    build:
+      context: "."
+      dockerfile: AuthenticationService\Dockerfile
+    depends_on:
+       - authdb
+  rabbitmq:
+    image: micdenny/rabbitmq-windows
+    hostname: rabbitmq
+  balancedb:
+    image: microsoft/mssql-server-windows-developer
+    environment:
+      SA_PASSWORD: "Your_password123"
+      ACCEPT_EULA: "Y"
+  authdb:
+    image: microsoft/mssql-server-windows-developer
+    environment:
+      SA_PASSWORD: "Your_password123"
+      ACCEPT_EULA: "Y"
+  apigateway:
+    image: apigateway
+    build:
+      context: .
+      dockerfile: APIGateway\Dockerfile
+
